@@ -21,5 +21,3 @@ run:
 ```console
 python3 format_v2.1.0.py       
 ```
-
-```
