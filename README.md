@@ -1,7 +1,9 @@
+# postmant-to-docx
+
 <p align="center">
 <a href="https://andiahmads.github.io/olive.cpostmant-to-docx/"><img src="./assets/sample.png"></a>
 </p>
-## Getting Started
+# Getting Started
 
 Run:
 
