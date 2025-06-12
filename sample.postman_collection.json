@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "d1ab86ed-e2d4-43bc-b39b-e995188ef864",
+		"name": "sample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38238366",
+		"_collection_link": "https://form-submission-hore2024.postman.co/workspace/My-Workspace~8024ea10-4c53-480b-809b-506cda91337c/collection/38238366-d1ab86ed-e2d4-43bc-b39b-e995188ef864?action=share&source=collection_link&creator=38238366"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://cat-fact.herokuapp.com/login",
+					"protocol": "https",
+					"host": [
+						"cat-fact",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"testing\",\n    \"password\":\"guk guk\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cat-fact.herokuapp.com/login",
+							"protocol": "https",
+							"host": [
+								"cat-fact",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=9k5sJv%2Bc3bbCBl75xhGNu%2B3Zp4n3ZKP75Us0%2BFwIoFE%3D\\u0026sid=929419e7-33ea-4e2f-85f0-7d8b7cd5cbd6\\u0026ts=1749716015\"}],\"max_age\":3600}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=\"https://nel.heroku.com/reports?s=9k5sJv%2Bc3bbCBl75xhGNu%2B3Zp4n3ZKP75Us0%2BFwIoFE%3D&sid=929419e7-33ea-4e2f-85f0-7d8b7cd5cbd6&ts=1749716015\""
+						},
+						{
+							"key": "Server",
+							"value": "Heroku"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 heroku-router"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jun 2025 08:13:35 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "567"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\n    \"message\": \"success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://cat-fact.herokuapp.com/user",
+					"protocol": "https",
+					"host": [
+						"cat-fact",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cat-fact.herokuapp.com/user",
+							"protocol": "https",
+							"host": [
+								"cat-fact",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=ONAUWge%2BX%2FWgZs3cM9ds%2Bq%2BqOyTFXKun8qsHMT79PQ4%3D\\u0026sid=929419e7-33ea-4e2f-85f0-7d8b7cd5cbd6\\u0026ts=1749716117\"}],\"max_age\":3600}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=\"https://nel.heroku.com/reports?s=ONAUWge%2BX%2FWgZs3cM9ds%2Bq%2BqOyTFXKun8qsHMT79PQ4%3D&sid=929419e7-33ea-4e2f-85f0-7d8b7cd5cbd6&ts=1749716117\""
+						},
+						{
+							"key": "Server",
+							"value": "Heroku"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 heroku-router"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 12 Jun 2025 08:15:17 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "567"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\n    \"username\": \"marsupilami\",\n    \"code_name\": \"huba huba\"\n}"
+				}
+			]
+		}
+	]
+}
