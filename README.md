@@ -1,3 +1,6 @@
+The background of this project was made because I got a very annoying task to convert documentation from postmant to the.docx format, ah in my heart this is not really me, especially since I hate making documentation.
+then the idea arose to make this project using python, because python is the easiest and direct satset!!!
+
 # postmant-to-docx
 
 <p align="center">
